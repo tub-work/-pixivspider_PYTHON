@@ -56,11 +56,6 @@ class Pixiv():
             self.ip_list.append(i.strip())
             print(i.strip())
 
-    ''' 会被反爬,改成使用代理
-        def get_tml(self, url):
-            response = se.get(url, headers=self.headers)
-            return response
-    '''
     def get_html(self, url, timeout, proxy=None, num_entries=5):
         if proxy is None:
             try:
