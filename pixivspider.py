@@ -56,6 +56,11 @@ class Pixiv():
             self.ip_list.append(i.strip())
             print(i.strip())
 
+    ''' 会被反爬,改成使用代理
+        def get_tml(self, url):
+            response = se.get(url, headers=self.headers)
+            return response
+    '''
     def get_html(self, url, timeout, proxy=None, num_entries=5):
         if proxy is None:
             try:
@@ -194,7 +199,6 @@ class Pixiv():
         page_end= raw_input("about "+ str(x) +" pages, how much want(default:all):")
         if page_end !="":
             x=page_end
-        print(x)
         like= raw_input('which rank above(default:5):')
         if like == '':
             self.rank_like=int(like)
