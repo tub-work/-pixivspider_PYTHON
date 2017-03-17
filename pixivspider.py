@@ -26,8 +26,8 @@ class Pixiv():
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) '
                           'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
         }
-        self.pixiv_id = 'eric503630@outlook.com'
-        self.password = 'eric19950307'
+        self.pixiv_id = '账号'
+        self.password = '密码'
         self.post_key = []
         self.return_to = 'http://www.pixiv.net/'
         self.load_path = 'F:\psdcode\Python\pixiv_pic' # '/home/vsftp/eric' #
